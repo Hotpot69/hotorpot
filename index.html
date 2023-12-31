@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Hot or Not</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .evil-text {
+      text-align: center;
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Create an evil-looking button */
+    .evil-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #8b0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .evil-button:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="evil-text">
+    Welcome to the Hot or Not
+    <button class="evil-button" onclick="openpage()" style="text-align: right;">Join us</button>
+
+	<script>
+  		function openpage() {
+    	window.location.href = 'Welcome1.html'; 
+  		}
+	</script>
+  </div>
+</body>
+</html>
